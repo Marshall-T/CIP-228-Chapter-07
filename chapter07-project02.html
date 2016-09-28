@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--
+    Marshall Taylor
+    CIP 228
+    ch 7 P 2
+    
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -121,9 +127,36 @@
 
 <div class="jumbotron">
   <div class="container">
+    
+<!--    <img src="images/art/preview.png" />  -->
+    
+    <video id = "video" poster="images/art/preview.png" controls width="480" height="360">
+      <source src="images/art/sample.mp4" type='video/mp4; codecs="H.264, AAC'">
+      <source src="images/art/sample.webm" type='video/webm;codecs="vp8, vorbis"'>
+      <source src="images/art/sample.ogv" type='video/ogg; codecs="theora, vorbis"'>
+      <p>Browser does not support HTML5 video</p>
+    </video>
+    <br>
+<!-- buttons for video
+-->
+      <p>
+         <button id = "rewd" type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-fast-backward"></span>
+        </button>
 
-video goes here
+         <button id = "back" type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-backward"></span>
+        </button>
 
+        <button id = "fwd" type="button" class="btn btn-default btn-sm">
+          <span id = "fwdClass" class="glyphicon glyphicon-play"></span>
+        </button>
+    
+        <button id = "fFwd" type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-fast-forward"></span>
+        </button>
+      </P>
+<br>Sample Video
   
   </div>
 </div>         
@@ -168,7 +201,7 @@ video goes here
 </div>  <!-- end container -->
 
 
-
+    <script src="chapter07-project02.js"></script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
